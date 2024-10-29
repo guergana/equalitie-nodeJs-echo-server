@@ -16,7 +16,7 @@ You should see the message sent via curl echoed back in the terminal.
 
 # To package file for windows and linux
 
-We will use the 'pkg' package. To install it globally run 
+We can use the [pkg](https://www.npmjs.com/package/pkg) package to build the file locally. To install it globally run 
 
 ```
 npm install pkg -g
@@ -29,3 +29,5 @@ pkg -t node14-win-x64,node14-linux index.js
 ```
 
 to create binaries for a fixed version of node14 in linux and in windows.
+
+Otherwise you can download the binaries created as an artifact in the actions panel in github.
