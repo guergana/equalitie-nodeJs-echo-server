@@ -39,7 +39,7 @@ jobs:
           working-dir: .
           output-dir: build
           executable-name: sea
-          sea-config-path: test-app/sea-config.json
+          sea-config-path: ./sea-config.json
           node-path: ${{ steps.find-node.outputs.node }}
 
       - uses: actions/upload-artifact@v4
