@@ -1,6 +1,6 @@
 {
     "main": "./index.js",
-    "output": "./build/node-echo-server.blob",
+    "output": "./build/node-echo-server.exe",
     "disableExperimentalSEAWarning": true,
     "useSnapshot": false,
     "useCodeCache": false
