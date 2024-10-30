@@ -51,3 +51,6 @@ The binaries can be found in the `/packaged-files` folder.
 + `index-linux` is the linux binary.
 + `index-win.exe` is the unsigned windows executable file.
 + `sea-signed.rar` is a compressed file contaning a signed executable file for windows.
++ `sea-signed-msi.rar` is a compressed file contaning a signed msi installation file for windows.
+
+Both signed apps have been tested on Windows 10. 
