@@ -1,13 +1,17 @@
 const request = require('supertest');
-const server = require('../index.js');
+const {app} = require('../index.js');
+
 
 describe('POST', () => {
-  it('echos sent message', function() {
-    let result = request(server).post('/').send('hola!')
 
-    expect(result._data).toEqual('hola!');
+  afterEach((done) => {
+      app.close(done); 
+  });
 
-
+  it('echos sent message', async () => {
+    let result = await request(app).post('/').send('hola!')
+    expect(result.text).toEqual('hola!');
+    
   });
 
 });
