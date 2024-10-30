@@ -4,7 +4,7 @@
   "description": "Coding test for equalitie software developer position",
   "main": "index.js",
   "scripts": {
-    "start-echo-server": "node index.js",
+    "start": "node index.js",
     "test": "jest"
   },
   "author": "Guergana Tzatchkova",
