@@ -1,9 +1,13 @@
+# Getting started
+
+The first time using the app, the dependencies need to be installed by running `npm install`.
+
 # How to run the echo server
 
 Open a terminal and run: 
 
 ```
-node index.js
+npm start
 ```
 
 In another terminal run: 
@@ -13,6 +17,10 @@ curl -d "Hola!" http://localhost:8082
 ``` 
 
 You should see the message sent via curl echoed back in the terminal.
+
+# Testing
+
+To run the tests run `npm test`.
 
 # To package file for windows and linux
 
@@ -35,3 +43,11 @@ Otherwise you can download the binaries created as an artifact in the actions pa
 # To sign an app for windows please use the following guide
 
 [https://lessons.livecode.com/m/4071/l/1306746-how-do-i-sign-a-windows-app](https://lessons.livecode.com/m/4071/l/1306746-how-do-i-sign-a-windows-app). Note that the ´Signtool´ command at the end must be run also from the Powershell.
+
+# Downloading the binaries
+
+The binaries can be found in the `/packaged-files` folder. 
+
++ `index-linux` is the linux binary.
++ `index-win.exe` is the unsigned windows executable file.
++ `sea-signed.rar` is a compressed file contaning a signed executable file for windows.
